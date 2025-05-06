@@ -1,0 +1,2 @@
+qrcode-terminal
+netifaces
