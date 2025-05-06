@@ -36,9 +36,10 @@ A local‐network file‐sharing utility that serves files or directories over H
   ```bash
   apt install uv -y
   uv venv
+  source .venv/bin/activate
   uv pip install -r requirements.txt
   ```
-> Use `deactivate` for deactivated this `uv venv`.
+> Use `deactivate` for deactivated this `source .venv/bin/activate`.
 
 3. Make the script executable (optional)
 ```bash
