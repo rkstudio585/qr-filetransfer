@@ -31,18 +31,19 @@ A local‐network file‐sharing utility that serves files or directories over H
    ```bash
    git clone https://github.com/rkstudio585/qr-filetransfer.git
    cd qr-filetransfer
-  ```
+   ```
 2. Install dependencies
-```bash
-apt install uv -y
-uv pip3 install -r requirements.txt
-```
+  ```bash
+  apt install uv -y
+  uv venv
+  uv pip install -r requirements.txt
+  ```
+> Use `deactivate` for deactivated this `uv venv`.
 
 3. Make the script executable (optional)
 ```bash
 chmod +x qrtransfer.py
 ```
-
 
 ---
 
