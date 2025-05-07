@@ -115,10 +115,10 @@ def serve_file(file_path: str, port: int, expire: int, password: str = None):
 def main():
     parser = argparse.ArgumentParser(description='Advanced QR File Transfer')
     parser.add_argument('paths', nargs='+', help='Files or directories to transfer')
-    parser.add_argument('--zip', action='store_true', help='Zip contents before transfer')
+    parser.add_argument('-z','--zip', action='store_true', help='Zip contents before transfer')
     parser.add_argument('-i', '--interface', help='Network interface to use')
-    parser.add_argument('--expire', type=int, default=0, help='Time in seconds before link expires (0 = never)')
-    parser.add_argument('--password', help="Password required to download (via URL param 'passed' or HTTP header X-Password)")
+    parser.add_argument('-e','--expire', type=int, default=0, help='Time in seconds before link expires (0 = never)')
+    parser.add_argument('-p','--password', help="Password required to download (via URL param 'passed' or HTTP header X-Password)")
     args = parser.parse_args()
 
     config = load_config()
